@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: ch.acra:acra-mail:5.9.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/3b8dc44c2e76c4bf30bc4d7228d78856/transformed/acra-mail-5.9.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/3b8dc44c2e76c4bf30bc4d7228d78856/transformed/acra-mail-5.9.7/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/ch.acra/acra-mail/5.9.7/995d5408073c5be758ef0459f82ccf9dd6c1bece/acra-mail-5.9.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/ch.acra/acra-mail/5.9.7/1cde7c2b80ab76c818099929806417623322a84a/acra-mail-5.9.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

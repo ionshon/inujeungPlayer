@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.chromium.net:cronet-common:108.5359.79@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/6e8f30ec28a8ec772949a0431222fc30/transformed/cronet-common-108.5359.79/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/6e8f30ec28a8ec772949a0431222fc30/transformed/cronet-common-108.5359.79/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.chromium.net/cronet-common/108.5359.79/a4a9281b37b213cb43d0626a414f3f1e56472977/cronet-common-108.5359.79-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

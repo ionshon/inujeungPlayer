@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_home"
+            android:enabled="true"
+            android:icon="@drawable/baseline_view_list_24"
+            android:title="@string/title_list" />
+
+    <item
+            android:id="@+id/navigation_dashboard"
+            android:enabled="true"
+            android:icon="@drawable/baseline_smart_display_24"
+            android:title="@string/title_play" />
+
+
+    <item
+            android:id="@+id/navigation_radio"
+            android:enabled="true"
+            android:icon="@drawable/baseline_radio_24"
+            android:title="@string/title_radio" />
+
+</menu>

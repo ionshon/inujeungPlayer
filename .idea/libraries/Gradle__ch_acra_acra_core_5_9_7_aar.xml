@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: ch.acra:acra-core:5.9.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/f3f9a505979b7e22ab84d65d9b361bbd/transformed/acra-core-5.9.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/f3f9a505979b7e22ab84d65d9b361bbd/transformed/acra-core-5.9.7/res" />
+      <root url="file://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/f3f9a505979b7e22ab84d65d9b361bbd/transformed/acra-core-5.9.7/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/ch.acra/acra-core/5.9.7/f8ad1a1118db69761dfee4da204196a34e0d81e1/acra-core-5.9.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/ch.acra/acra-core/5.9.7/a5e545912d40a7104e84787a59f3914391587d78/acra-core-5.9.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

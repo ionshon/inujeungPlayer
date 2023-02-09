@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.window:window-testing:1.1.0-alpha04@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/29951cf5c8ed8f8e707debff68749234/transformed/window-testing-1.1.0-alpha04/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/29951cf5c8ed8f8e707debff68749234/transformed/window-testing-1.1.0-alpha04/res" />
+      <root url="file://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/29951cf5c8ed8f8e707debff68749234/transformed/window-testing-1.1.0-alpha04/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/androidx.window/window-testing/1.1.0-alpha04/f67abff104dc294250229b226fe110b9662cc7ac/window-testing-1.1.0-alpha04-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

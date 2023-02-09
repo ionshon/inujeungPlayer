@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/ui_notification_player_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/circle_button_sound_notif_shape"
+            android:contentDescription="@string/noti_play_stop"
+            android:src="@drawable/ic_play" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ui_notification_close_button"
+            android:layout_toEndOf="@+id/ui_notification_player_button"
+            android:layout_alignEnd="@id/ui_notification_close_button"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_title1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingRight="7dp"
+                android:text="@string/text_value_radio_notification"
+                android:maxLines="1"
+                android:textSize="16sp" />
+
+            <!--            android:id="@+id/text_title"-->
+            <TextView
+                android:id="@+id/text_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingRight="7dp"
+                android:text="title"
+                android:maxLines="1"
+                android:textColor="#828282"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/ui_notification_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ui_notification_player_button"
+            android:layout_alignEnd="@+id/ui_notification_player_button"
+            android:layout_alignStart="@+id/ui_notification_player_button"
+            android:layout_alignTop="@+id/ui_notification_player_button"
+            android:indeterminate="true"
+            android:theme="@style/ProgressBarSoundNotificatonTheme" />
+
+        <ImageButton
+            android:id="@+id/ui_notification_close_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle_button_sound_notif_shape"
+            android:contentDescription="@string/noti_play_stop"
+            android:src="@android:drawable/ic_lock_power_off" />
+
+    </RelativeLayout>
+</RelativeLayout>

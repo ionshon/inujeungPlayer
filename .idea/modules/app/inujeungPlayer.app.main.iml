@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":app:main" external.linked.project.path="$MODULE_DIR$/../../../app" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/debug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/androidTest/res;file://$MODULE_DIR$/../../../app/src/androidTestDebug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/androidTest/debug" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+      </configuration>
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <flagArguments>
+            <flagArg name="noReflect" arg="true" />
+            <flagArg name="noStdlib" arg="true" />
+          </flagArguments>
+          <stringArguments>
+            <stringArg name="classpath">
+              <args>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/b672d0ef4a4b1aeea100f213b35ecc37/transformed/databinding-runtime-7.3.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/1c865bbf8a700d5b6651671bd89f1ff7/transformed/viewbinding-7.3.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/8a65bee39646df06ebdce1b30d9107b2/transformed/databinding-adapters-7.3.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/androidx.databinding/databinding-common/7.3.0/9ce4d7d086454caee5620765f7aa39115aeffb47/databinding-common-7.3.0.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/3fb4142f0f6cb330ab801b67e7373f12/transformed/databinding-ktx-7.3.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/e49d083348787797270621fcb8212417/transformed/acra-toast-5.9.7-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/b43ad761f00343a2867de634d50fda25/transformed/acra-mail-5.9.7-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/8919fedd971a9f28715d0c13db180bee/transformed/window-1.1.0-alpha04-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/8c9b5f199ff98c1fcdeecff3dfc4edeb/transformed/room-ktx-2.5.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/91691eca506643f0387973f78c342a28/transformed/navigation-fragment-ktx-2.5.3-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/849cf101034eb6a84d8995baa16b6291/transformed/navigation-fragment-2.5.3-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/3732690c53401d11d153caeef3dcc5a7/transformed/fragment-ktx-1.5.5-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/43e84d64fab9b5fcbc3ab2a7bc2ebff7/transformed/navigation-ui-ktx-2.5.3-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/183cad52c9a485f26eac05ed046569ba/transformed/navigation-runtime-ktx-2.5.3-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/9dc83eca81e4e95bc12cbb4de503e2a6/transformed/navigation-ui-2.5.3-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/8520376eb465243f62c267abf300d627/transformed/navigation-runtime-2.5.3-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/19200d695d5c3ee128c74a0fdb91fb6f/transformed/activity-ktx-1.6.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/64a5d6361c103abb017bad29c1ea5838/transformed/navigation-common-ktx-2.5.3-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/66192d42615b5185b8966192508ecc0e/transformed/navigation-common-2.5.3-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/c07b95bc8c64408e1327c51c38f18585/transformed/lifecycle-viewmodel-ktx-2.5.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/239d4cc84c1d07094831d2516eafb419/transformed/lifecycle-runtime-ktx-2.5.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/e8fe23f4b7cc293a8bb39c981d9b2223/transformed/lifecycle-livedata-ktx-2.5.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/2c997cd1c0ef33f3e751d3831929aeff1390cb30/kotlinx-coroutines-core-jvm-1.6.4.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/97c06ca004fac3e052197869900a29fd/transformed/legacy-support-v4-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/cbe7e4cad10c1fb136d82bf4cec79c5e/transformed/material-1.7.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/7579354651ab17fdee4c58f0ce7f5e59/transformed/viewpager2-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/35aaed3291ef432cec3284aba816e217/transformed/glide-4.14.2-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/f2b6a56176073374da561165c4906e2d/transformed/appcompat-1.6.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/ca2dacb54f792426f42d0e08ac5c26d8/transformed/fragment-1.5.5-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/d6b9f720274ad3b8e0b640b7d98fd604/transformed/activity-1.6.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/9dba6a39245d5c21c452e7b1e0d79366/transformed/lifecycle-viewmodel-savedstate-2.5.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/f955fc8b2ad196e2f4429598440e15f7492eeb2b/kotlinx-coroutines-android-1.6.4.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/cc1d0830dc0c0ae6e74cc35e1d338d48/transformed/room-runtime-2.5.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/androidx.room/room-common/2.5.0/829a83fb92f1696a8a32f3beea884dfc87b2693/room-common-2.5.0.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/93d1eb00a288e984647f2b583c91dc2d/transformed/acra-core-5.9.7-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.7.21/5407c3593c58860cec5ee3f66c468396b42f4c2b/kotlin-stdlib-jdk8-1.7.21.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/523a0016cb185e0757231213ba30454e/transformed/core-ktx-1.9.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/2b31874e3ceb6e12e3210bb6f8040d53/transformed/lifecycle-process-2.4.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/97b92ee34e1a56001c81869f24cb7b36/transformed/lifecycle-service-2.4.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/566bcb456435c3596a69987a176994d3/transformed/exoplayer-ui-2.18.2-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/06e87b36dd13346cdfc53b1ddee13f31/transformed/media-1.6.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/500225db6d42c33545122a8e9d0d757e/transformed/legacy-support-core-ui-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/c0dca2466f9ea48e152983e0459d4a47/transformed/dynamicanimation-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/d60b15f838c483340ac8efebccf0d70d/transformed/legacy-support-core-utils-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/c575d909e64955c8d62f3d15cfc11c0a/transformed/recyclerview-1.2.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/1f97a3f0e2769e1d5396fe474d87c315/transformed/appcompat-resources-1.6.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/9d76efe4568a340ef7643b74f17bf44f/transformed/drawerlayout-1.1.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/d9b8844004bdaac1887bedd6d4c43da8/transformed/coordinatorlayout-1.1.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/53540a9e2df9eeef2734544f5ea4858c/transformed/transition-1.4.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/9abbedf0c804345f8815bf301cf7ae28/transformed/vectordrawable-animated-1.1.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/a47e4c2adc205a84934579b223277320/transformed/vectordrawable-1.1.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/ab3b631b9269a181380e08a891b0dd97/transformed/loader-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/ee1bba065006dbe13ebc74b39c39aaa9/transformed/viewpager-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/f87177916efa8e3e3dcbf4eeff7a06ca/transformed/slidingpanelayout-1.2.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/c3694db10e2a5e8d8d0fa94a41b13433/transformed/customview-1.1.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/e4b513e25520cf00e64421595797aaa9/transformed/swiperefreshlayout-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/2ce321f97219fe6aa271b31d7c002357/transformed/asynclayoutinflater-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/72a19e40baeca2987bc038ed41848703/transformed/core-1.9.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/c653228accf3a0cb904d3dd5ae81fe4f/transformed/lifecycle-runtime-2.5.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/46c3a08dbf66a59b80d1bc552a2a9dea/transformed/lifecycle-viewmodel-2.5.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/androidx.collection/collection-ktx/1.1.0/f807b2f366f7b75142a67d2f3c10031065b5168/collection-ktx-1.1.0.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/426a5cef46998176d57e2423e387da54/transformed/versionedparcelable-1.1.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/4548d56c4167dcd6c7f30b36039bd89c/transformed/sqlite-framework-2.3.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/e066cba189c4dc3172c0269d27e4a8e2/transformed/sqlite-2.3.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/3889db5c10a987e1450efacf1a313169/transformed/gifdecoder-4.14.2-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/6496420f8035c881e673e07345bafcf7/transformed/cursoradapter-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/385d816429db268eb3431abf56f62428/transformed/savedstate-ktx-1.2.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/a17e70eba903086048bf304ebefe08cc/transformed/savedstate-1.2.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/32660574585f7c489e6182ef822609e8/transformed/cardview-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/3044ac3b04f7c369a6751d7823c1d6d4/transformed/work-runtime-2.7.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/4f55b820a7eee8f7d4e4f316b9704c25/transformed/lifecycle-livedata-2.5.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/c14456264feb3a149f3e4c43bd481c61/transformed/core-runtime-2.1.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/f7387b11663a2566c8ff888cb060b497/transformed/lifecycle-livedata-core-ktx-2.5.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/ae64531d15006fe40cc3fc4ea4ef25c6/transformed/lifecycle-livedata-core-2.5.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.5.1/1fdb7349701e9cf2f0a69fc10642b6fef6bb3e12/lifecycle-common-2.5.1.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/a71c795a64eefcb2aa513743202d6c7d/transformed/documentfile-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/4afb524e9c840109612dd46c3909e455/transformed/localbroadcastmanager-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/e4b98371ef5ef2c9981863a13edc8d7f/transformed/print-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/f020dec0c92b7e133ec1f819064fb3d5/transformed/interpolator-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/androidx.annotation/annotation/1.5.0/857678d6b4ca7b28571ef7935c668bdb57e15027/annotation-1.5.0.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.7.21/a0ba09615c2213d580315e234b3febfea25b757e/kotlin-stdlib-jdk7-1.7.21.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/a6ccf299810020a9e6b9c2013cbaa4f0/transformed/annotation-experimental-1.3.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.21/1a2eaf898a0dda83037034b10a42053cf8a7caf8/kotlin-stdlib-1.7.21.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.21/cb02257de8e13e8498f8e2f69f742f2d438e794d/kotlin-stdlib-common-1.7.21.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/63d6bc884719c1ca7162c89c1c608181/transformed/startup-runtime-1.1.1-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/6cbc2f4fd5b46c64d5aa1521df3bf828/transformed/tracing-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/fc9ed43db811b43e9b77f318cf626d0c/transformed/cronet-embedded-108.5359.79-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.9.0/fc93484fc67ab52b1e0ccbdaa3922d8a6678e097/converter-gson-2.9.0.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.8/431fc3cbc0ff81abdbfde070062741089c3ba874/gson-2.8.8.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.9.0/d8fdfbd5da952141a665a403348b74538efc05ff/retrofit-2.9.0.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.14.9/3e6d101343c7ea687cd593e4990f73b25c878383/okhttp-3.14.9.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/com.squareup.okio/okio/1.17.2/78c7820b205002da4d2d137f6f312bd64b3d6049/okio-1.17.2.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/com.mpatric/mp3agic/0.9.1/235fe1d4a3da33a57e23166a2527a23310852c3f/mp3agic-0.9.1.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/com.google.auto.service/auto-service-annotations/1.0.1/ac86dacc0eb9285ea9d42eee6aad8629ca3a7432/auto-service-annotations-1.0.1.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/42c24cb82b23d48a3fff614ebc00237a/transformed/cronet-common-108.5359.79-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/dfdd73cb820d5f63c2996f99e0f8bc76/transformed/cronet-api-108.5359.79-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/com.github.bumptech.glide/disklrucache/4.14.2/543524781bc197fb64e1c2df1756a8ec17ff05ba/disklrucache-4.14.2.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/com.github.bumptech.glide/annotations/4.14.2/57e84ef841035701766b7d74236d04c65cfa4248/annotations-4.14.2.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/0b982ed05af9075095b0604970e20b8e/transformed/exifinterface-1.3.3-api.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/fc431fc066832b9bc8a2e65f0eebd71e/transformed/constraintlayout-2.1.4-api.jar</arg>
+                <arg>$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-33/android.jar</arg>
+                <arg>$USER_HOME$/AppData/Local/Android/Sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
+              </args>
+            </stringArg>
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/debug" />
+            <stringArg name="jvmTarget" arg="1.8" />
+            <stringArg name="moduleName" arg="app_debug" />
+            <stringArg name="apiVersion" arg="1.7" />
+            <stringArg name="languageVersion" arg="1.7" />
+          </stringArguments>
+          <arrayArguments>
+            <arrayArg name="friendPaths" />
+            <arrayArg name="pluginClasspaths">
+              <args>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.7.21/a36688d6a38ea94ac3fce84e198ea2cb6c6a8e88/kotlin-compiler-embeddable-1.7.21.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.7.21/ad6d09bc4db0eab1069112eea8ebea0be7be44f/kotlin-reflect-1.7.21.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.21/1a2eaf898a0dda83037034b10a42053cf8a7caf8/kotlin-stdlib-1.7.21.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.21/cb02257de8e13e8498f8e2f69f742f2d438e794d/kotlin-stdlib-common-1.7.21.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.7.21/b06d5c58297dccce2a0f69b0636804b0a73b3b9/kotlin-script-runtime-1.7.21.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.7.21/b94818f660cc50f5d39f04b6396ac38e4d3a9eb7/kotlin-daemon-embeddable-1.7.21.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar</arg>
+                <arg>$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.6.0/330f2244e9030119ab3030fc3fededc86713d9cc/jna-5.6.0.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginOptions" />
+          </arrayArguments>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debug/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debugUnitTest/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/aidl_source_output_dir/debug/out" />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/debug/out">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/renderscript_source_output_dir/debug/out" />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/res/resValues/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/res/resValues/debug" type="java-resource" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/res/rs/debug" />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/source/kapt/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/kapt/debug" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/source/kaptKotlin/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/kaptKotlin/debug" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/src/debug" />
+    <content url="file://$MODULE_DIR$/../../../app/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/res" type="java-resource" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 33, extension level 3 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.5.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: kaptGeneratedClasses">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../app/build/tmp/kapt3/classes/debug" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.databinding:databinding-common:7.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.5.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.21" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.8" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.retrofit2:converter-gson:2.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.retrofit2:retrofit:2.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.14.9" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.17.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.mpatric:mp3agic:0.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.room:room-common:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.auto.service:auto-service-annotations:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.collection:collection-ktx:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:disklrucache:4.14.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:annotations:4.14.2" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.databinding:viewbinding:7.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.databinding:databinding-runtime:7.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.databinding:databinding-adapters:7.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.databinding:databinding-ktx:7.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-runtime-ktx:2.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata:2.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.arch.core:core-runtime:2.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-process:2.4.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.startup:startup-runtime:1.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-service:2.4.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer-ui:2.18.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.media:media:1.6.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.core:core:1.9.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.annotation:annotation-experimental:1.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.window:window:1.1.0-alpha04@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-v4:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.documentfile:documentfile:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.loader:loader:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.print:print:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.customview:customview:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.drawerlayout:drawerlayout:1.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.interpolator:interpolator:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.fragment:fragment:1.5.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.activity:activity:1.6.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.core:core-ktx:1.9.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.savedstate:savedstate:1.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.recyclerview:recyclerview:1.2.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.room:room-runtime:2.5.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.sqlite:sqlite:2.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.sqlite:sqlite-framework:2.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.room:room-ktx:2.5.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: ch.acra:acra-toast:5.9.7@aar" level="project" />
+    <orderEntry type="library" name="Gradle: ch.acra:acra-core:5.9.7@aar" level="project" />
+    <orderEntry type="library" name="Gradle: ch.acra:acra-mail:5.9.7@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.work:work-runtime:2.7.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.fragment:fragment-ktx:1.5.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.activity:activity-ktx:1.6.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.savedstate:savedstate-ktx:1.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.chromium.net:cronet-embedded:108.5359.79@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.chromium.net:cronet-common:108.5359.79@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.chromium.net:cronet-api:108.5359.79@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:glide:4.14.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:gifdecoder:4.14.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.vectordrawable:vectordrawable:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.exifinterface:exifinterface:1.3.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.tracing:tracing:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.6.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat-resources:1.6.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.material:material:1.7.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout:2.1.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.dynamicanimation:dynamicanimation:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.transition:transition:1.4.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata-ktx:2.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.navigation:navigation-fragment-ktx:2.5.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.navigation:navigation-fragment:2.5.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.navigation:navigation-runtime:2.5.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.navigation:navigation-common:2.5.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.navigation:navigation-runtime-ktx:2.5.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.navigation:navigation-common-ktx:2.5.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.navigation:navigation-ui-ktx:2.5.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.navigation:navigation-ui:2.5.3@aar" level="project" />
+  </component>
+</module>

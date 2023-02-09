@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: ch.acra:acra-toast:5.9.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/9ffba8c009bd2c9b14c5df2e7e0a0aa6/transformed/acra-toast-5.9.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/transforms-3/9ffba8c009bd2c9b14c5df2e7e0a0aa6/transformed/acra-toast-5.9.7/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/ch.acra/acra-toast/5.9.7/6afd976a73e697ee698f05993e36e76c61213cb3/acra-toast-5.9.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/IntelliJIDEAProjects/insuJungPlayer/caches/modules-2/files-2.1/ch.acra/acra-toast/5.9.7/b15eded82c00ea49f93856b998fae51284a33633/acra-toast-5.9.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
