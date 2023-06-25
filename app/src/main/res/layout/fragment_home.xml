@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeFragment" android:backgroundTint="#FFFFFF">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#F0F5F8"
+            app:contentInsetStart="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:contentInsetStartWithNavigation="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+            <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    app:showAsAction="ifRoom|collapseActionView"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:queryBackground="@android:drawable/editbox_background_normal"
+                    app:queryHint="검색어를 입력하세요"
+                    app:searchIcon="?android:attr/actionModeWebSearchDrawable"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+            </androidx.appcompat.widget.SearchView>
+            <Button
+                    android:id="@+id/button_allmusic"
+                    android:layout_width="48dp"
+                    android:layout_height="52dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="7dp"
+                    android:text="@string/allMusic"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_goto"
+                    app:layout_constraintHorizontal_bias="0.5"/>
+            <ImageView
+                    android:id="@+id/imageView_shuffle"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:autofillHints="album"
+                    android:background="@drawable/ic_shuffle"
+                    android:backgroundTint="#2891E4"
+                    android:tooltipText="shuffle"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView_genre"
+                    app:layout_constraintTop_toTopOf="@+id/searchView_music"
+                    app:layout_constraintBottom_toBottomOf="@+id/searchView_music"
+                    app:layout_constraintVertical_bias="0.411"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"/>
+            <ImageView
+                    android:id="@+id/imageView_genre"
+                    android:layout_width="32dp"
+                    android:layout_height="40dp"
+                    android:background="@android:drawable/ic_menu_sort_by_size"
+                    android:tooltipText="genre"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView_album"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_shuffle"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintTop_toTopOf="@+id/imageView_shuffle"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView_shuffle"/>
+            <ImageView
+                    android:id="@+id/imageView_album"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:autofillHints="album"
+                    android:background="@drawable/ic_disk"
+                    android:tooltipText="album"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView_file"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_genre"
+                    app:layout_constraintHorizontal_bias="0.5" app:layout_constraintTop_toTopOf="@+id/imageView_genre"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView_genre"/>
+
+            <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/imageView_file"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_album" app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView_bookmark"
+                    app:layout_constraintTop_toTopOf="@+id/imageView_album"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView_album"
+                    android:background="@drawable/baseline_music_video_24"/>
+            <ImageView
+                    android:id="@+id/imageView_bookmark"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bookmarkblack"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_file"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView_file"
+                    app:layout_constraintTop_toTopOf="@+id/imageView_file"
+                    app:layout_constraintVertical_bias="0.0" app:layout_constraintEnd_toStartOf="@+id/imageView_goto"
+                    app:layout_constraintHorizontal_bias="0.5"/>
+            <ImageView
+                    android:id="@+id/imageView_goto"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:drawable/ic_menu_manage"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView_bookmark"
+                    app:layout_constraintEnd_toStartOf="@+id/button_allmusic"
+                    app:layout_constraintTop_toTopOf="@+id/imageView_bookmark"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_bookmark"
+                    app:layout_constraintHorizontal_bias="0.5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" android:id="@+id/constraintLayout2">
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/top_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".2"/>
+
+        <LinearLayout
+                android:id="@+id/welcome_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/top_guideline"
+                tools:visibility="visible">
+
+            <ImageView
+                    android:id="@+id/photo_album"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_photo_album_black_24dp"
+                    app:tint="@color/colorPrimary"/>
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/open_album"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/open_album"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/permission_rationale_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/top_guideline"
+                tools:visibility="visible">
+
+            <ImageView
+                    android:id="@+id/locked"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_phonelink_lock_black_24dp"
+                    app:tint="@color/colorPrimary"/>
+
+            <TextView
+                    android:id="@+id/permission_required_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginEnd="72dp"
+                    android:gravity="center"
+                    android:paddingTop="16dp"
+                    android:text="@string/permission_not_granted"/>
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/grant_permission_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/grant_permission"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+                android:id="@+id/handle_view"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:alpha="0.5"
+                android:background="@drawable/bg_rounded_rect"
+                android:contentDescription="@string/quick_scroll_handle"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_unfold_more_black_48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_List"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/item_layout"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+            android:id="@+id/spinner"
+            android:visibility="gone"
+            android:layout_width="200sp"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom|end"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <FrameLayout
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScroolingViewBehavior"
+            android:id="@+id/fragHome_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+    <!--app:layout_constraintEnd_toEndOf="parent" android:background="#FFFFFF"-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

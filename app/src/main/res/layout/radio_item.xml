@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/radioLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@drawable/edge"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/image_radio_item"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tx_radio_program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"  />
+
+    <ImageView
+        android:id="@+id/imageView_loading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        tools:srcCompat="@tools:sample/avatars" />
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/image_radio_item"-->
+
+
+</FrameLayout>
+
+<!--
+ />-->
