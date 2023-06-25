@@ -60,10 +60,6 @@ class MainActivity : AppCompatActivity(),  NavigationBarView.OnItemSelectedListe
         binding.navView.visibility = View.VISIBLE
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-    }
-
     private fun getRadioAddress() {
 //        fSetPlayableUrl(MusicConstants.RADIO_ADDR.kbs1Radio)
         for (i in allRadio2.indices) {
