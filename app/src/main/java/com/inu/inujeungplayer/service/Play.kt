@@ -18,7 +18,6 @@ import com.inu.inujeungplayer.constant.MusicDevice.titleMain
 import com.inu.inujeungplayer.constant.PendinIntent
 import com.inu.inujeungplayer.utils.MetaExtract.getLyric
 import com.inu.inujeungplayer.utils.MyApplication
-import com.inu.inujeungplayer.utils.bounceIconSetting
 
 object Play {
     var mPlayer: MediaPlayer? = null

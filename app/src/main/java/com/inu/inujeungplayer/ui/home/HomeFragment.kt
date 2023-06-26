@@ -1,13 +1,16 @@
 package com.inu.inujeungplayer.ui.home
 
 import android.Manifest
+import android.app.Activity.RESULT_OK
 import android.app.PendingIntent
+import android.app.RecoverableSecurityException
 import android.content.Context
 import android.content.DialogInterface
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
+import android.provider.MediaStore
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +21,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.Fragment
@@ -26,13 +30,13 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.inu.inujeungplayer.R
 import com.inu.inujeungplayer.adapter.MusicAdapter
 import com.inu.inujeungplayer.constant.MusicConstants
-import com.inu.inujeungplayer.constant.MusicDevice
 import com.inu.inujeungplayer.constant.MusicDevice.isRadioOn
 import com.inu.inujeungplayer.constant.MusicDevice.isVideo
 import com.inu.inujeungplayer.constant.MusicDevice.musicIDList
@@ -43,15 +47,19 @@ import com.inu.inujeungplayer.constant.PendinIntent
 import com.inu.inujeungplayer.constant.PendinIntent.lPauseIntent
 import com.inu.inujeungplayer.databinding.FragmentHomeBinding
 import com.inu.inujeungplayer.model.Music
-import com.inu.inujeungplayer.ui.files.*
 import com.inu.inujeungplayer.utils.Injector
 import com.inu.inujeungplayer.utils.MyApplication
 import com.inu.inujeungplayer.utils.fastscroller.FastScroller
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.io.File
+import java.io.IOException
+import java.nio.file.FileSystems
+import java.nio.file.Files
 import kotlin.system.exitProcess
+
 
 private const val DELETE_PERMISSION_REQUEST = 0x1033
 private const val UPDATE_PERMISSION_REQUEST = 0x1023
@@ -72,6 +80,9 @@ class HomeFragment : Fragment() {
     private lateinit var musicAdapter: MusicAdapter
     lateinit var handleView: ImageView
     lateinit var recyclerView: RecyclerView
+
+    private var deletedMusic: Music? = null
+    private lateinit var intentSenderLauncher: ActivityResultLauncher<IntentSenderRequest>
 
    /* companion object {
         private const val ARG_PATH: String = "com.inu.inujeungplayer"
@@ -96,6 +107,11 @@ class HomeFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View {
+
+       Log.d("intentSenderLauncher1","size of musiclist = ${musicList.size}")
+       musicList = emptyList()
+       Log.d("intentSenderLauncher2","size of musiclist = ${musicList.size}")
+
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
         recyclerView = binding.recyclerViewList
@@ -214,7 +230,97 @@ class HomeFragment : Fragment() {
             itempUpdate(id)
         }
 
+       intentSenderLauncher = registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) {
+           if(it.resultCode == RESULT_OK) {
+               if(Build.VERSION.SDK_INT == Build.VERSION_CODES.Q) {
+                   lifecycleScope.launch {
+                       deletePhotoFromExternalStorage(Uri.parse(deletedMusic?.contentUri) ?: return@launch)
+                   }
+               }
+               homeViewModel.deleteMusic(deletedMusic!!)
+               val mutableList = musicList as MutableList
+                mutableList.removeAt(musicList.indexOf(deletedMusic))
+               Toast.makeText(requireContext(), "Photo deleted successfully", Toast.LENGTH_SHORT).show()
+//               musicAdapter.notifyChanged(musicIDList.indexOf(deletedMusic!!.id))
+
+               Log.d("intentSenderLauncher","after deleted = ${musicList.size}")
+               /*val temp = musicList.shuffled()
+               musicAdapter.submitList(temp)
+               musicList = temp
+               musicIDList.clear()
+               for (m in musicList) {
+                   musicIDList.add(m.id)
+               }*/
+
+           } else {
+               Toast.makeText(requireContext(), "Photo couldn't be deleted", Toast.LENGTH_SHORT).show()
+           }
+       }
+
         return root
+    }
+
+    /*******************************Fragment End******************************************/
+    private fun deleteMusic(music: Music) {
+        Log.d("performUpdateMusic","deleteMusic")
+        lifecycleScope.launch {
+            performDeleteMusic(music)
+        }
+
+        deletedMusic = music
+    }
+    private suspend fun performDeleteMusic(music: Music) {
+        Log.d("performUpdateMusic","performDeleteMusic")
+        withContext(Dispatchers.IO) {
+            try {
+                MyApplication.applicationContext().contentResolver.delete(
+                    Uri.parse(music.contentUri),
+                    "${MediaStore.Audio.Media._ID} = ?",
+                    arrayOf(music.id.toString())
+                )
+            } catch (e: SecurityException) {
+                val intentSender = when {
+                    Build.VERSION.SDK_INT >= Build.VERSION_CODES.R -> {
+                        MediaStore.createDeleteRequest(MyApplication.applicationContext().contentResolver
+                            , listOf(Uri.parse(music.contentUri))).intentSender
+                    }
+                    Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q -> {
+                        val recoverableSecurityException = e as? RecoverableSecurityException
+                        recoverableSecurityException?.userAction?.actionIntent?.intentSender
+                    }
+                    else -> null
+                }
+
+                intentSender?.let { sender ->
+                    intentSenderLauncher.launch(
+                        IntentSenderRequest.Builder(sender).build()
+                    )
+                }
+            }
+        }
+    }
+    private suspend fun deletePhotoFromExternalStorage(photoUri: Uri) {
+        withContext(Dispatchers.IO) {
+            try {
+                requireActivity().contentResolver.delete(photoUri, null, null)
+            } catch (e: SecurityException) {
+                val intentSender = when {
+                    Build.VERSION.SDK_INT >= Build.VERSION_CODES.R -> {
+                        MediaStore.createDeleteRequest(requireActivity().contentResolver, listOf(photoUri)).intentSender
+                    }
+                    Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q -> {
+                        val recoverableSecurityException = e as? RecoverableSecurityException
+                        recoverableSecurityException?.userAction?.actionIntent?.intentSender
+                    }
+                    else -> null
+                }
+                intentSender?.let { sender ->
+                    intentSenderLauncher.launch(
+                        IntentSenderRequest.Builder(sender).build()
+                    )
+                }
+            }
+        }
     }
 
     // Kotlin Extenstion Function (Int)
@@ -383,6 +489,14 @@ class HomeFragment : Fragment() {
                     dlg.setView(updateView)
                         .setPositiveButton(R.string.update_dialog_positive, DialogInterface.OnClickListener
                         { dialog, which ->
+                            try {
+                                Files.delete(FileSystems.getDefault().getPath(music.path))
+                                println("performUpdateMusic: Deletion succeeded.")
+                            } catch (e: IOException) {
+                                println("performUpdateMusic: Deletion failed. ${music.path}")
+                                e.printStackTrace()
+                            }
+                            Log.d("performUpdateMusic","R.id.action_delete?")
                             Log.d("performUpdateMusic", "currentposition=> ${music.currentPosition}, ${editTextArtist.text}, ${editTextTitle.text}")
                             music.title = editTextTitle.text.toString()
                             music.artist = editTextArtist.text.toString()
@@ -395,16 +509,29 @@ class HomeFragment : Fragment() {
                         .show()
                 }
                 R.id.action_delete-> {
+                    Log.d("intentSenderLauncher","action_deleted = ${musicList.size}, deletedIndex= ${musicList.indexOf(music)}")
                     Log.d("performUpdateMusic","R.id.action_delete")
-                    MaterialAlertDialogBuilder(requireContext())
+                    val builder = MaterialAlertDialogBuilder(requireContext())
+                    builder
                         .setTitle(R.string.delete_dialog_title)
                         .setMessage(getString(R.string.delete_dialog_message, music.title))
-                        .setPositiveButton(R.string.delete_dialog_positive) { _: DialogInterface, _: Int ->
-//                            homeViewModel.deleteMusic(music)
-                        }
-                        .setNegativeButton(R.string.delete_dialog_negative) { dialog: DialogInterface, _: Int ->
+                        .setPositiveButton(R.string.delete_dialog_positive,  DialogInterface.OnClickListener
+                        { _, _ ->
+                            deleteMusic(music)
+                            Log.d("performUpdateMusic"," Deletion succeeded.")
+//                            println("performUpdateMusic: Deletion succeeded.")
+                            /*try {
+                                Files.delete(FileSystems.getDefault().getPath(music.path))
+                                println("performUpdateMusic: Deletion succeeded.")
+                            } catch (e: IOException) {
+                                println("performUpdateMusic: Deletion failed.")
+                                e.printStackTrace()
+                            }*/
+                        })
+                        .setNegativeButton(R.string.delete_dialog_negative, DialogInterface.OnClickListener { dialog: DialogInterface, _: Int ->
+                            println("performUpdateMusic: Deletion succeeded.")
                             dialog.dismiss()
-                        }
+                        })
                         .show()
                 }
             }
@@ -412,6 +539,7 @@ class HomeFragment : Fragment() {
         }
         pop.show()
     }
+
 
     private fun artistLongClick(music: Music) {}
 

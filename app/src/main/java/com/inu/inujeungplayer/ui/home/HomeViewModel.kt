@@ -75,6 +75,13 @@ class HomeViewModel internal constructor(
             _music.postValue(music) // 라이브데이터 변경
         }
     }
+
+    fun deleteMusic(music: Music) {
+        viewModelScope.launch {
+            homeRepository.delete(music.id)
+            _music.postValue(music)
+        }
+    }
 //***********************************************************************************
     private val _snackbar = MutableLiveData<String?>()
     /**

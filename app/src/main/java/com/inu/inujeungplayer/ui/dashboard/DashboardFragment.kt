@@ -13,7 +13,6 @@ import android.os.Build
 import android.os.Bundle
 import android.os.PowerManager
 import android.provider.Settings
-import android.util.Log
 import android.view.*
 import android.view.View.*
 import android.widget.*
@@ -21,8 +20,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.inu.inujeungplayer.R
@@ -360,7 +357,7 @@ class DashboardFragment : Fragment(), SurfaceHolder.Callback {
 
     private fun screenSet() {
 //        Log.d("screenSet", "$isPlaying, ${songID}, ${musicList[musicIDList.indexOf(songID)].currentPosition}")
-        var i = musicIDList.indexOf(songID)
+        val i = musicIDList.indexOf(songID)
         if (i != -1) { //
             if (musicList[i].currentPosition == 1) { // 비디오
                 centerImageView.visibility = INVISIBLE
