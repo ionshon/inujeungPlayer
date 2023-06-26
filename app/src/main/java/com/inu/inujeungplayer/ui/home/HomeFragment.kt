@@ -226,7 +226,6 @@ class HomeFragment : Fragment() {
 
         MyApplication.musicRepository.songid.observe(viewLifecycleOwner) { id ->
             musicAdapter.submitList(musicList)
-            Log.d("songidobserve","${id}")
             itempUpdate(id)
         }
 
@@ -240,20 +239,10 @@ class HomeFragment : Fragment() {
                homeViewModel.deleteMusic(deletedMusic!!)
                val mutableList = musicList as MutableList
                 mutableList.removeAt(musicList.indexOf(deletedMusic))
-               Toast.makeText(requireContext(), "Photo deleted successfully", Toast.LENGTH_SHORT).show()
-//               musicAdapter.notifyChanged(musicIDList.indexOf(deletedMusic!!.id))
-
-               Log.d("intentSenderLauncher","after deleted = ${musicList.size}")
-               /*val temp = musicList.shuffled()
-               musicAdapter.submitList(temp)
-               musicList = temp
-               musicIDList.clear()
-               for (m in musicList) {
-                   musicIDList.add(m.id)
-               }*/
+               Toast.makeText(requireContext(), "Music deleted successfully", Toast.LENGTH_SHORT).show()
 
            } else {
-               Toast.makeText(requireContext(), "Photo couldn't be deleted", Toast.LENGTH_SHORT).show()
+               Toast.makeText(requireContext(), "Music couldn't be deleted", Toast.LENGTH_SHORT).show()
            }
        }
 
@@ -262,15 +251,12 @@ class HomeFragment : Fragment() {
 
     /*******************************Fragment End******************************************/
     private fun deleteMusic(music: Music) {
-        Log.d("performUpdateMusic","deleteMusic")
         lifecycleScope.launch {
             performDeleteMusic(music)
         }
-
         deletedMusic = music
     }
     private suspend fun performDeleteMusic(music: Music) {
-        Log.d("performUpdateMusic","performDeleteMusic")
         withContext(Dispatchers.IO) {
             try {
                 MyApplication.applicationContext().contentResolver.delete(
@@ -518,15 +504,6 @@ class HomeFragment : Fragment() {
                         .setPositiveButton(R.string.delete_dialog_positive,  DialogInterface.OnClickListener
                         { _, _ ->
                             deleteMusic(music)
-                            Log.d("performUpdateMusic"," Deletion succeeded.")
-//                            println("performUpdateMusic: Deletion succeeded.")
-                            /*try {
-                                Files.delete(FileSystems.getDefault().getPath(music.path))
-                                println("performUpdateMusic: Deletion succeeded.")
-                            } catch (e: IOException) {
-                                println("performUpdateMusic: Deletion failed.")
-                                e.printStackTrace()
-                            }*/
                         })
                         .setNegativeButton(R.string.delete_dialog_negative, DialogInterface.OnClickListener { dialog: DialogInterface, _: Int ->
                             println("performUpdateMusic: Deletion succeeded.")
